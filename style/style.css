@@ -1,0 +1,15 @@
+.bg-custom-blue {
+  background-color: #038aff !important;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.h-fit {
+  height: fit-content;
+}
+
+.border-card {
+  border-radius: 12px 12px 64px 12px;
+}
