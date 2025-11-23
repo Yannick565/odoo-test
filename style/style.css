@@ -10,6 +10,35 @@
   background-color: #eeeff4 !important;
 }
 
+.bg-custom-purpleCTA {
+  background-color: #161348 !important;
+}
+
+.bg-custom-LB {
+  background-color: #fafbff !important;
+}
+
+.custom-purpleCTA {
+  color: #161348 !important;
+}
+
+.negGap {
+  gap: -24px;
+}
+
+.lightDropS {
+  box-shadow: 0 0px 24px rgba(0, 0, 0, 0.06);
+}
+
+.border-custom-grey {
+  border: 2px solid #eeeff4;
+}
+
+.card-fixed {
+  max-width: 240px;
+  flex: 1 1 240px;
+}
+
 .skew {
   position: relative;
   height: 120px;
@@ -27,7 +56,11 @@
 }
 
 .mb-8 {
-  margin-bottom: 16rem !important;
+  margin-bottom: 10rem !important;
+}
+
+.p-6 {
+  padding: 6rem !important;
 }
 
 .w-fit {
@@ -40,6 +73,10 @@
 
 .border-card {
   border-radius: 12px 12px 64px 12px;
+}
+
+.border-CTA {
+  border-radius: 0px 64px 0px 64px;
 }
 
 .cardNumber-f {
@@ -58,4 +95,8 @@
   position: absolute;
   top: -128px;
   right: -100px;
+}
+
+.accordion-button::after {
+  display: none;
 }
