@@ -2,6 +2,34 @@
   background-color: #038aff !important;
 }
 
+.bg-custom-purple {
+  background-color: #1d1348 !important;
+}
+
+.bg-custom-grey {
+  background-color: #eeeff4 !important;
+}
+
+.skew {
+  position: relative;
+  height: 120px;
+  z-index: -1;
+  margin-top: -48px;
+  -webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
+  transform: skewY(-2deg);
+}
+
+.mt-16 {
+  margin-top: 16rem !important;
+}
+
+.mb-8 {
+  margin-bottom: 16rem !important;
+}
+
 .w-fit {
   width: fit-content;
 }
@@ -12,4 +40,22 @@
 
 .border-card {
   border-radius: 12px 12px 64px 12px;
+}
+
+.cardNumber-f {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.cardDetail-f {
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.vidAbsolute {
+  position: absolute;
+  top: -128px;
+  right: -100px;
 }
