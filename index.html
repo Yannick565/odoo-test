@@ -32,10 +32,16 @@
           <div class="col-md-6 d-none d-md-flex justify-content-center">
             <nav class="d-flex gap-4">
               <a href="#" class="text-white text-decoration-none">Home</a>
-              <a href="#" class="text-white text-decoration-none">Products</a>
-              <a href="#" class="text-white text-decoration-none">Pages</a>
-              <a href="#" class="text-white text-decoration-none">App</a>
-              <a href="#" class="text-white text-decoration-none">Docs</a>
+              <a href="#Progess" class="text-white text-decoration-none"
+                >Products</a
+              >
+              <a href="#Technology" class="text-white text-decoration-none"
+                >Pages</a
+              >
+              <a href="#Download" class="text-white text-decoration-none"
+                >App</a
+              >
+              <a href="#FAQ" class="text-white text-decoration-none">Docs</a>
             </nav>
           </div>
           <div
@@ -53,9 +59,8 @@
       <!--Hero content container-->
       <section class="container mt-5 mb-5">
         <div
-          class="row justify-content-center justify-content-lg-between align-items-center g-5"
+          class="row justify-content-center justify-content-lg-between align-items-center"
         >
-          <!--Hero content L-->
           <div class="col-12 col-lg-6 text-white">
             <div class="row">
               <div class="col-12 col-lg-6 mb-4">
@@ -66,10 +71,13 @@
                 </p>
               </div>
             </div>
-            <a class="col-12 col-lg-2 btn btn-light btn-sm px-3 mb-4"
+            <a class="col-12 col-sm-4 col-lg-2 btn btn-light btn-sm px-3 mb-4"
               >Get started</a
             >
-            <div class="d-flex gap-4 align-items-center" style="height: 50px">
+            <div
+              class="d-flex flex-wrap gap-3 align-items-center mb-4"
+              style="height: auto"
+            >
               <p class="m-0">Trusted by:</p>
               <img src="./assets/google-white.svg" height="24" />
               <img src="./assets/spotify-white.svg" height="24" />
@@ -77,10 +85,9 @@
               <img src="./assets/paypal-white.svg" height="24" />
             </div>
           </div>
-          <!--Hero content L end-->
-          <!--Hero content R-->
-          <div class="col-auto">
-            <div class="col bg-white border-card p-4">
+
+          <div class="col-12 col-lg-auto">
+            <div class="col bg-white border-card p-4 mb-4 mb-lg-0">
               <div class="row align-items-center g-0 mb-4">
                 <p class="col m-0">Manage cards</p>
                 <a class="col-3 btn btn-outline-secondary">Add new</a>
@@ -103,7 +110,7 @@
                     <p class="m-0 cardDetail-f">Card number</p>
                   </div>
                   <div
-                    class="col-12 mb-0 d-flex justify-content-between cardNumber-f"
+                    class="col-12 mb-0 d-flex flex-wrap justify-content-between cardNumber-f"
                   >
                     <p class="m-0">4358</p>
                     <p class="m-0">-</p>
@@ -116,18 +123,18 @@
                 </div>
 
                 <div class="row align-items-center mb-3">
-                  <div class="col-6">
+                  <div class="col-6 mb-2 mb-lg-0">
                     <p class="m-0 pb-1 cardDetail-f">Name</p>
                     <p class="m-0 font-w">John Snow</p>
                   </div>
-                  <div class="col-4">
+                  <div class="col-6 col-lg-4">
                     <p class="m-0 pb-1 cardDetail-f">Expiry date</p>
                     <p class="m-0">11/24</p>
                   </div>
                 </div>
               </div>
 
-              <div class="container p-0">
+              <div class="container p-0 mb-3">
                 <div class="row">
                   <div class="col">Starbucks</div>
                   <div class="col-auto">$5.00 USD</div>
@@ -143,7 +150,7 @@
                 ></div>
               </div>
 
-              <div class="container p-0">
+              <div class="container p-0 mb-3">
                 <div class="row">
                   <div class="col">Nike Sports</div>
                   <div class="col-auto">$129.00 USD</div>
@@ -158,25 +165,24 @@
                   class="row p-2 mt-2 border-bottom border-grey opacity-100"
                 ></div>
               </div>
-              <div class="row">
+              <div class="row mt-2">
                 <a class="col-auto btn btn-link">View all</a>
               </div>
             </div>
           </div>
-
-          <!--Hero content R end-->
         </div>
       </section>
+
       <!-- Hero content container end-->
     </div>
     <!--Skew-->
     <div class="w-100 bg-custom-blue skew mb-5"></div>
 
-    <section class="container mt-16 mb-8">
+    <section id="Progess" class="container mt-16 mb-8">
       <div class="row mb-4 justify-content-lg-between align-items-center">
         <!-- Progess Sectie -->
         <div
-          class="col-12 col-lg-5 p-4 border border-2 border-custom-grey rounded-3 shadow position-relative px-5"
+          class="col-12 col-lg-5 p-4 border border-2 border-custom-grey rounded-3 shadow position-relative px-3 px-lg-5 mb-4 mb-lg-0"
         >
           <img
             class="rounded-1 shadow vidAbsolute object-fit-cover"
@@ -188,6 +194,7 @@
             >Play video <i class="fa-solid fa-play"></i
           ></a>
           <p>Awesome projects</p>
+
           <div class="col mb-5">
             <p class="mb-1">Create te new logo</p>
             <div class="progress rounded-0" style="height: 2px">
@@ -241,11 +248,11 @@
 
         <!-- Tools Sectie-->
         <div class="col-12 col-lg-5">
-          <span class="badge rounded-pill text-bg-warning text-white p-2">
-            Tools
-          </span>
+          <span class="badge rounded-pill text-bg-warning text-white p-2"
+            >Tools</span
+          >
           <h2 class="mb-4">We build for designers and developers</h2>
-          <p class="col-10">
+          <p class="col-12 col-lg-10">
             Get components and examples,including tons of variables that will
             help you grow your business
           </p>
@@ -253,50 +260,13 @@
         <!-- Tools Sectie end-->
       </div>
     </section>
-    <!--Features Sectie-->
-    <section class="container mb-8">
-      <div class="row justify-content-lg-between align-items-center">
-        <div class="col-5">
-          <span class="badge rounded-pill text-bg-success text-white p-2 mb-4">
-            Features
-          </span>
-          <h3 class="mb-5">
-            Get components and examples, including tons of variables that will
-            help you grow yor business.
-          </h3>
-          <div class="text-success">
-            <p>
-              <i class="fa-solid fa-square-check"></i>perfect for modern
-              startups
-            </p>
-            <p>
-              <i class="fa-solid fa-square-check"></i>Fully custumizble and
-              scalable
-            </p>
-          </div>
-        </div>
 
-        <div
-          class="col-5 p-3 rounded-2"
-          style="
-            background-image: url('./assets/img_02.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-          "
-        >
-          <a class="btn btn-light m-2"
-            >Play video <i class="fa-solid fa-play"></i
-          ></a>
-        </div>
-      </div>
-    </section>
     <!--Features Sectie end-->
 
     <!-- Technology Sectie-->
-    <section class="container mb-8">
+    <section id="Technology" class="container mb-8">
       <div class="row align-items-center">
-        <div class="col-3">
+        <div class="col-12 col-md-3 mb-4 mb-md-0">
           <div class="p-0 border-custom-grey rounded-3 mb-2 lightDropS">
             <img class="w-100 rounded-top-2" src="./assets/person_03.jpg" />
             <div class="p-4 rounded-3 bg-white">Jimmy Hendrix</div>
@@ -305,13 +275,11 @@
             <p class="mb-0">300+ components</p>
           </div>
         </div>
-
-        <div class="col-3">
+        <div class="col-12 col-md-3 mb-4 mb-md-0">
           <div
-            class="d-flex flex-column gap-4 p-4 border-custom-grey rounded-3 mb-2 lightDropS text-lg-center pt-5 pb-5"
+            class="d-flex flex-column gap-4 p-4 border-custom-grey rounded-3 mb-2 lightDropS text-center pt-5 pb-5"
           >
             <img src="./assets/airbnb.svg" height="36px" class="mb-2" />
-
             <div class="mb-2">
               <i class="fa-regular fa-star" style="color: #ffcc4f"></i>
               <i class="fa-regular fa-star" style="color: #ffcc4f"></i>
@@ -319,7 +287,6 @@
               <i class="fa-regular fa-star" style="color: #ffcc4f"></i>
               <i class="fa-regular fa-star" style="color: grey"></i>
             </div>
-
             <div>
               <p class="mb-1 fw-semibold">4.95 out of 5 stars</p>
               <p class="mb-0 text-muted">from 23 reviews</p>
@@ -327,7 +294,7 @@
           </div>
 
           <div
-            class="d-flex flex-column align-items-center gap-4 p-4 border-custom-grey rounded-3 mb-2 lightDropS text-lg-center pt-5 pb-5"
+            class="d-flex flex-column align-items-center gap-4 p-4 border-custom-grey rounded-3 mb-2 lightDropS text-center pt-5 pb-5"
           >
             <img
               src="./assets/company_01.png"
@@ -364,39 +331,40 @@
             </div>
           </div>
         </div>
-        <div class="col-1"></div>
-        <div class="col-5">
-          <span class="badge mb-4 rounded-pill bg-custom-blue text-white p-2">
-            Technology
-          </span>
+        <div class="col-12 col-md-1"></div>
+        <div class="col-12 col-md-5">
+          <span class="badge mb-4 rounded-pill bg-custom-blue text-white p-2"
+            >Technology</span
+          >
           <h2 class="mb-4">We build for designers and developers</h2>
-          <p class="col-10">
-            Get components and examples,including tons of variables that will
+          <p class="col-12 col-lg-10">
+            Get components and examples, including tons of variables that will
             help you grow your business
           </p>
           <a class="btn btn-link p-0">See case studies</a>
         </div>
       </div>
     </section>
+
     <!-- Technology Sectie end-->
     <!-- Download Sectie-->
-    <section>
+    <section id="Download">
       <div class="container mb-8">
-        <div class="row justify-content-between">
-          <div class="col-5">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-12 col-lg-5 mb-4 mb-lg-0">
             <span class="badge mb-4 rounded-pill bg-warning text-white p-2">
               Easy to install
             </span>
             <h3 class="mb-4">Download, install and run.</h3>
-            <p class="col-10">
-              Get components and examples,including tons of variables that will
+            <p class="col-12 col-lg-10">
+              Get components and examples, including tons of variables that will
               help you grow your business.
             </p>
-            <a class="btn btn-dark p-0">App Store</a>
-            <a class="btn btn-dark p-0">Play Store</a>
+            <a class="btn btn-dark p-0 me-2 mb-2 mb-lg-0">App Store</a>
+            <a class="btn btn-dark p-0 mb-2 mb-lg-0">Play Store</a>
           </div>
           <div
-            class="col-5 p-3 rounded-2"
+            class="col-12 col-lg-5 p-3 rounded-2"
             style="
               background-image: url('./assets/img_03.jpg');
               background-size: cover;
@@ -411,14 +379,15 @@
         </div>
       </div>
     </section>
+
     <!-- Download Sectie end-->
     <!-- CTA -->
     <section>
       <div class="container mb-8">
         <div
-          class="row p-6 bg-custom-purpleCTA text-white border-CTA justify-content-between align-items-center"
+          class="row p-6 bg-custom-purpleCTA text-white border-CTA justify-content-between align-items-center flex-column flex-lg-row"
         >
-          <div class="col-6">
+          <div class="col-12 col-lg-6 mb-3 mb-lg-0">
             <h4>Infinite solutions</h4>
             <p>
               Intunitive markup, powerful and lightning fast build tools,
@@ -426,7 +395,7 @@
             </p>
           </div>
           <div
-            class="col-auto d-flex align-items-center gap-4 btn btn-light p-3 px-4 custom-purpleCTA"
+            class="col-12 col-lg-auto d-flex align-items-center gap-4 btn btn-light p-3 px-4 custom-purpleCTA justify-content-start justify-content-lg-center"
           >
             <a class="text-decoration-none custom-purpleCTA">Learn more</a>
             <i class="fa-solid fa-arrow-right"></i>
@@ -434,6 +403,7 @@
         </div>
       </div>
     </section>
+
     <!-- CTA end-->
 
     <!-- This one was REALLY difficult for me, I could not get the desired effect. Sorry in advance!-->
@@ -451,8 +421,8 @@
           </div>
         </div>
         <div class="row">
-          <div class="d-flex flex-wrap gap-4">
-            <div class="col card-fixed">
+          <div class="d-flex flex-wrap gap-4 justify-content-center">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-auto card-fixed mb-3">
               <div
                 class="d-flex flex-column gap-4 border-custom-grey rounded-3 lightDropS text-center px-4 py-5"
               >
@@ -461,21 +431,19 @@
                   height="36"
                   class="mb-2 mx-auto"
                 />
-
                 <div>
                   <i class="fa-regular fa-star" style="color: #ffcc4f"></i>
                   <i class="fa-regular fa-star" style="color: #ffcc4f"></i>
                   <i class="fa-regular fa-star" style="color: #ffcc4f"></i>
                   <i class="fa-regular fa-star" style="color: #ffcc4f"></i>
                   <i class="fa-regular fa-star" style="color: grey"></i>
-
                   <p class="mb-1 fw-semibold mt-2">4.95 out of 5 stars</p>
                   <p class="mb-0 text-muted">from 23 reviews</p>
                 </div>
               </div>
             </div>
 
-            <div class="col card-fixed">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-auto card-fixed mb-3">
               <div
                 class="d-flex flex-column gap-3 border-custom-grey rounded-3 lightDropS text-center px-4 py-5"
               >
@@ -484,7 +452,6 @@
                   height="30"
                   class="mb-2 mx-auto"
                 />
-
                 <div>
                   <p class="mb-1 text-muted">
                     They build modern looking websites easily using Tabs.
@@ -494,7 +461,7 @@
               </div>
             </div>
 
-            <div class="col card-fixed">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-auto card-fixed mb-3">
               <div
                 class="d-flex flex-column gap-3 border-custom-grey rounded-3 lightDropS text-center px-4 py-5"
               >
@@ -503,7 +470,6 @@
                   height="30"
                   class="mb-2 mx-auto"
                 />
-
                 <div>
                   <p class="mb-1 text-muted">
                     They build modern looking websites easily using Tabs.
@@ -513,7 +479,7 @@
               </div>
             </div>
 
-            <div class="col card-fixed">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-auto card-fixed mb-3">
               <div
                 class="d-flex flex-column gap-4 border-custom-grey rounded-3 lightDropS text-center px-4 py-5"
               >
@@ -522,21 +488,19 @@
                   height="36"
                   class="mb-2 mx-auto"
                 />
-
                 <div>
                   <i class="fa-regular fa-star" style="color: #ffcc4f"></i>
                   <i class="fa-regular fa-star" style="color: #ffcc4f"></i>
                   <i class="fa-regular fa-star" style="color: #ffcc4f"></i>
                   <i class="fa-regular fa-star" style="color: #ffcc4f"></i>
                   <i class="fa-regular fa-star" style="color: grey"></i>
-
                   <p class="mb-1 fw-semibold mt-2">4.95 out of 5 stars</p>
                   <p class="mb-0 text-muted">from 23 reviews</p>
                 </div>
               </div>
             </div>
 
-            <div class="col card-fixed">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-auto card-fixed mb-3">
               <div
                 class="d-flex flex-column gap-3 border-custom-grey rounded-3 lightDropS text-center px-4 py-5"
               >
@@ -545,7 +509,6 @@
                   height="30"
                   class="mb-2 mx-auto"
                 />
-
                 <div>
                   <p class="mb-1 text-muted">
                     They build modern looking websites easily using Tabs.
@@ -564,7 +527,7 @@
     <div class="w-100 bg-custom-LB skew mb-8"></div>
 
     <!-- FAQ Secie -->
-    <section>
+    <section id="FAQ">
       <div class="container">
         <div class="row">
           <div class="col text-center">
@@ -786,26 +749,29 @@
     <!--Skew-->
     <div class="w-100 bg-white skew z-1"></div>
 
+    <!-- Footer -->
     <section
       class="bg-custom-purpleCTA text-white pt-5"
       style="margin-top: -32px"
     >
       <div class="container pt-5">
         <div class="row pt-5 justify-content-between align-items-center">
-          <div class="col-auto">
+          <div class="col-12 col-lg-auto mb-3 mb-lg-0">
             <h4>Brilliant solutions for your ideas</h4>
             <p>Modern looking websites.</p>
           </div>
-          <div class="col-auto">
-            <a class="btn btn-light">Documentantion</a>
-            <a class="btn btn-primary">Purchase now</a>
+          <div class="col-12 col-lg-auto d-flex gap-2">
+            <a class="btn btn-light mb-2 mb-lg-0">Documentantion</a>
+            <a class="btn btn-primary mb-2 mb-lg-0">Purchase now</a>
           </div>
         </div>
+
         <div class="row">
           <div class="mt-4 border-bottom border-white opacity-25"></div>
         </div>
+
         <div class="row mt-4 justify-content-between">
-          <div class="col-3">
+          <div class="col-12 col-lg-3 mb-4 mb-lg-0">
             <img src="./assets/odoo-white.svg" height="32" />
             <p class="mt-4 mb-4">
               Odoo attempts to bring the best development experience to
@@ -819,8 +785,10 @@
               <i class="fa-brands fa-facebook"></i>
             </div>
           </div>
-          <div class="col-1"></div>
-          <div class="col-1">
+
+          <div class="col-12 col-lg-1 mb-4 mb-lg-0"></div>
+
+          <div class="col-12 col-lg-1 mb-4 mb-lg-0">
             <strong class="d-block mb-4">Account</strong>
             <ul class="list-unstyled d-flex flex-column gap-2 m-0 p-0">
               <li>
@@ -840,7 +808,7 @@
             </ul>
           </div>
 
-          <div class="col-1">
+          <div class="col-12 col-lg-1 mb-4 mb-lg-0">
             <strong class="d-block mb-4">About</strong>
             <ul class="list-unstyled d-flex flex-column gap-2 m-0 p-0">
               <li>
@@ -858,7 +826,7 @@
             </ul>
           </div>
 
-          <div class="col-1">
+          <div class="col-12 col-lg-1 mb-4 mb-lg-0">
             <strong class="d-block mb-4">Company</strong>
             <ul class="list-unstyled d-flex flex-column gap-2 m-0 p-0">
               <li>
@@ -877,14 +845,16 @@
             </ul>
           </div>
         </div>
+
         <div class="row">
           <div class="mt-4 border-bottom border-white opacity-25"></div>
         </div>
+
         <div class="row mt-4 justify-content-between">
-          <div class="col-auto">
+          <div class="col-12 col-lg-auto mb-3 mb-lg-0">
             <p>© <strong>Odoo.</strong> All rights reserved</p>
           </div>
-          <div class="col-auto d-flex gap-5">
+          <div class="col-12 col-lg-auto d-flex flex-wrap gap-3">
             <a href="#" class="text-decoration-none text-white">Terms</a>
             <a href="#" class="text-decoration-none text-white">Privacy</a>
             <a href="#" class="text-decoration-none text-white">Cookies</a>
@@ -892,5 +862,7 @@
         </div>
       </div>
     </section>
+
+    <!-- Footer end-->
   </body>
 </html>
