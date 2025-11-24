@@ -11,6 +11,13 @@
       crossorigin="anonymous"
     />
     <link href="./style/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
   </head>
   <body>
     <script
@@ -47,14 +54,35 @@
           <div
             class="col-6 col-md-3 d-flex align-items-center justify-content-end gap-3"
           >
-            <a href="#" class="text-white text-decoration-none">Sign in</a>
-            <a class="btn btn-light btn-sm px-3">Buy now</a>
+            <a
+              href="#"
+              class="text-white text-decoration-none d-none d-md-block"
+              >Sign in</a
+            >
+            <a class="btn btn-light btn-sm px-3 customButton d-none d-md-block">
+              <i class="fa-solid fa-bag-shopping"></i> Buy now
+            </a>
+            <div class="hamburger d-md-none">
+              <i class="fa-solid fa-bars fa-xl text-white"></i>
+            </div>
           </div>
         </div>
-
+        <ul class="mobileList d-md-none mt-3">
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="#Progess">Products</a>
+          </li>
+          <li>
+            <a href="#Technology">Pages</a>
+          </li>
+          <li><a href="#Download">App</a></li>
+          <li><a href="#FAQ">Docs</a></li>
+          <li><a href="#">Sign in</a></li>
+          <li><a href="#">Buy now</a></li>
+        </ul>
         <div class="mt-4 border-bottom border-white opacity-25"></div>
       </section>
-      <!--Navigatie end-->
+      <!-- Navigatie sectie end-->
 
       <!--Hero content container-->
       <section class="container mt-5 mb-5">
@@ -64,16 +92,18 @@
           <div class="col-12 col-lg-6 text-white">
             <div class="row">
               <div class="col-12 col-lg-6 mb-4">
-                <h1 class="mb-3">Development done right</h1>
+                <h1 class="mb-3"><strong>Development done right</strong></h1>
                 <p class="mb-0">
                   Build a beautiful, modern website with flexible components
                   built from scratch.
                 </p>
               </div>
             </div>
-            <a class="col-12 col-sm-4 col-lg-2 btn btn-light btn-sm px-3 mb-4"
-              >Get started</a
-            >
+            <a
+              class="col-12 col-sm-4 col-lg-3 btn btn-light btn-sm px-3 mb-4 customButton"
+              >Get started
+              <i class="fa-solid fa-plus fa-xs accordion-icon ms-2"></i
+            ></a>
             <div
               class="d-flex flex-wrap gap-3 align-items-center mb-4"
               style="height: auto"
@@ -89,7 +119,7 @@
           <div class="col-12 col-lg-auto">
             <div class="col bg-white border-card p-4 mb-4 mb-lg-0">
               <div class="row align-items-center g-0 mb-4">
-                <p class="col m-0">Manage cards</p>
+                <p class="col m-0 custom-textBlue">Manage cards</p>
                 <a class="col-3 btn btn-outline-secondary">Add new</a>
               </div>
 
@@ -136,11 +166,13 @@
 
               <div class="container p-0 mb-3">
                 <div class="row">
-                  <div class="col">Starbucks</div>
-                  <div class="col-auto">$5.00 USD</div>
+                  <div class="col mt-2 custom-textBlue">Starbucks</div>
+                  <div class="col-auto custom-textBlue">$5.00 USD</div>
                 </div>
                 <div class="row">
-                  <div class="col">Pending - San Fransisco, United States</div>
+                  <div class="col text-muted" style="font-size: 14px">
+                    Pending - San Fransisco, United States
+                  </div>
                 </div>
               </div>
 
@@ -152,11 +184,13 @@
 
               <div class="container p-0 mb-3">
                 <div class="row">
-                  <div class="col">Nike Sports</div>
-                  <div class="col-auto">$129.00 USD</div>
+                  <div class="col mt-2 custom-textBlue">Nike Sports</div>
+                  <div class="col-auto custom-textBlue">$129.00 USD</div>
                 </div>
                 <div class="row">
-                  <div class="col">Pending - Lisbon, Portugal</div>
+                  <div class="col text-muted" style="font-size: 14px">
+                    Pending - Lisbon, Portugal
+                  </div>
                 </div>
               </div>
 
@@ -166,7 +200,11 @@
                 ></div>
               </div>
               <div class="row mt-2">
-                <a class="col-auto btn btn-link">View all</a>
+                <a
+                  class="col-auto btn btn-link text-decoration-underline-dashed"
+                >
+                  View all
+                </a>
               </div>
             </div>
           </div>
@@ -248,16 +286,56 @@
 
         <!-- Tools Sectie-->
         <div class="col-12 col-lg-5">
-          <span class="badge rounded-pill text-bg-warning text-white p-2"
+          <span class="badge rounded-pill text-bg-warning text-white p-2 mb-2"
             >Tools</span
           >
-          <h2 class="mb-4">We build for designers and developers</h2>
+          <h2 class="mb-4 custom-textBlue">
+            We build for designers and developers
+          </h2>
           <p class="col-12 col-lg-10">
             Get components and examples,including tons of variables that will
             help you grow your business
           </p>
         </div>
         <!-- Tools Sectie end-->
+      </div>
+    </section>
+
+    <!--Features Sectie-->
+    <section id="Features" class="container mb-8">
+      <div class="row justify-content-lg-between align-items-center">
+        <div class="col-12 col-lg-5 mb-4 mb-lg-0">
+          <span class="badge rounded-pill text-bg-success text-white p-2 mb-4">
+            Features
+          </span>
+          <h4 class="mb-5 custom-textBlue">
+            Get components and examples, including tons of variables that will
+            help you grow yor business.
+          </h4>
+          <div class="text-success">
+            <p>
+              <i class="fa-solid fa-square-check me-2"></i>perfect for modern
+            </p>
+            <p>
+              <i class="fa-solid fa-square-check me-2"></i>Fully custumizble and
+              scalable
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="col-12 col-lg-5 p-3 rounded-2 mb-4 mb-lg-0"
+          style="
+            background-image: url('./assets/img_02.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+          "
+        >
+          <a class="btn btn-light m-2"
+            >Play video <i class="fa-solid fa-play"></i
+          ></a>
+        </div>
       </div>
     </section>
 
@@ -269,7 +347,18 @@
         <div class="col-12 col-md-3 mb-4 mb-md-0">
           <div class="p-0 border-custom-grey rounded-3 mb-2 lightDropS">
             <img class="w-100 rounded-top-2" src="./assets/person_03.jpg" />
-            <div class="p-4 rounded-3 bg-white">Jimmy Hendrix</div>
+            <div
+              class="p-4 rounded-3 bg-white d-flex justify-content-between align-items-center"
+            >
+              <div
+                class="d-flex justify-content-between align-items-center gap-2"
+              >
+                <p class="profileIconYellow mb-0">JH</p>
+                <p class="m-0 custom-textBlue">Jimmy Hendrix</p>
+              </div>
+
+              <i class="fa-regular fa-heart"></i>
+            </div>
           </div>
           <div class="border-custom-grey rounded-3 bg-white p-3">
             <p class="mb-0">300+ components</p>
@@ -336,12 +425,16 @@
           <span class="badge mb-4 rounded-pill bg-custom-blue text-white p-2"
             >Technology</span
           >
-          <h2 class="mb-4">We build for designers and developers</h2>
+          <h2 class="mb-4 custom-textBlue">
+            We use the latest technologies on the market.
+          </h2>
           <p class="col-12 col-lg-10">
             Get components and examples, including tons of variables that will
             help you grow your business
           </p>
-          <a class="btn btn-link p-0">See case studies</a>
+          <a class="btn btn-link p-0 text-decoration-underline"
+            >See case studies</a
+          >
         </div>
       </div>
     </section>
@@ -360,8 +453,14 @@
               Get components and examples, including tons of variables that will
               help you grow your business.
             </p>
-            <a class="btn btn-dark p-0 me-2 mb-2 mb-lg-0">App Store</a>
-            <a class="btn btn-dark p-0 mb-2 mb-lg-0">Play Store</a>
+            <a
+              class="col-12 col-lg-3 btn btn-dark p-0 me-2 mb-2 mb-lg-0 customButton"
+              >App Store</a
+            >
+            <a
+              class="col-12 col-lg-3 btn btn-dark p-0 mb-2 mb-lg-0 customButton"
+              >Play Store</a
+            >
           </div>
           <div
             class="col-12 col-lg-5 p-3 rounded-2"
@@ -531,8 +630,8 @@
       <div class="container">
         <div class="row">
           <div class="col text-center">
-            <p>Helpful answers</p>
-            <p>
+            <h3 class="mb-3 custom-textBlue">Helpful answers</h3>
+            <p class="mb-5 text-muted">
               Start building fast, beautiful and modern looking websites in no
               time.
             </p>
@@ -738,10 +837,18 @@
           </div>
         </div>
         <div class="row mb-5">
-          <div class="col text-center">
-            <p>I want to start a new project.</p>
-            <a class="btn btn-primary">Buy now</a>
-            <a class="btn">Buy now</a>
+          <div class="col text-center mb-5">
+            <p class="custom-textBlue mb-4" style="font-size: 18px">
+              I want to start a new project.
+            </p>
+            <a class="btn btn-primary px-4 p-3"
+              >Buy now
+              <i
+                class="fa-solid fa-arrow-right px-3"
+                style="font-size: 12px"
+              ></i
+            ></a>
+            <a class="btn">Learn more</a>
           </div>
         </div>
       </div>
@@ -761,8 +868,12 @@
             <p>Modern looking websites.</p>
           </div>
           <div class="col-12 col-lg-auto d-flex gap-2">
-            <a class="btn btn-light mb-2 mb-lg-0">Documentantion</a>
-            <a class="btn btn-primary mb-2 mb-lg-0">Purchase now</a>
+            <a class="btn btn-light mb-2 mb-lg-0 customButton"
+              >Documentantion</a
+            >
+            <a class="btn btn-primary mb-2 mb-lg-0 customButton"
+              >Purchase now</a
+            >
           </div>
         </div>
 
@@ -773,7 +884,7 @@
         <div class="row mt-4 justify-content-between">
           <div class="col-12 col-lg-3 mb-4 mb-lg-0">
             <img src="./assets/odoo-white.svg" height="32" />
-            <p class="mt-4 mb-4">
+            <p class="mt-4 mb-4 weight300">
               Odoo attempts to bring the best development experience to
               designers and developers by offering the tools needed for having a
               quick and solid start in most web projects.
@@ -790,7 +901,9 @@
 
           <div class="col-12 col-lg-1 mb-4 mb-lg-0">
             <strong class="d-block mb-4">Account</strong>
-            <ul class="list-unstyled d-flex flex-column gap-2 m-0 p-0">
+            <ul
+              class="list-unstyled d-flex flex-column gap-2 m-0 p-0 weight300"
+            >
               <li>
                 <a href="#" class="text-decoration-none text-white">Profile</a>
               </li>
@@ -810,7 +923,9 @@
 
           <div class="col-12 col-lg-1 mb-4 mb-lg-0">
             <strong class="d-block mb-4">About</strong>
-            <ul class="list-unstyled d-flex flex-column gap-2 m-0 p-0">
+            <ul
+              class="list-unstyled d-flex flex-column gap-2 m-0 p-0 weight300"
+            >
               <li>
                 <a href="#" class="text-decoration-none text-white">Services</a>
               </li>
@@ -828,7 +943,9 @@
 
           <div class="col-12 col-lg-1 mb-4 mb-lg-0">
             <strong class="d-block mb-4">Company</strong>
-            <ul class="list-unstyled d-flex flex-column gap-2 m-0 p-0">
+            <ul
+              class="list-unstyled d-flex flex-column gap-2 m-0 p-0 weight300"
+            >
               <li>
                 <a href="#" class="text-decoration-none text-white"
                   >Community</a
@@ -854,7 +971,7 @@
           <div class="col-12 col-lg-auto mb-3 mb-lg-0">
             <p>© <strong>Odoo.</strong> All rights reserved</p>
           </div>
-          <div class="col-12 col-lg-auto d-flex flex-wrap gap-3">
+          <div class="col-12 col-lg-auto d-flex flex-wrap gap-3 weight300">
             <a href="#" class="text-decoration-none text-white">Terms</a>
             <a href="#" class="text-decoration-none text-white">Privacy</a>
             <a href="#" class="text-decoration-none text-white">Cookies</a>

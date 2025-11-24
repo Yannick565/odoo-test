@@ -1,6 +1,7 @@
 html,
 body {
   scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
 }
 
 .bg-custom-blue {
@@ -25,6 +26,41 @@ body {
 
 .custom-purpleCTA {
   color: #161348 !important;
+}
+
+.customButton {
+  padding: 12px 12px 12px 12px !important;
+  border-radius: 6px !important;
+}
+
+.custom-textBlue {
+  color: #152b5c !important;
+}
+
+.weight300 {
+  font-weight: 300;
+}
+
+.text-decoration-underline {
+  text-decoration-line: underline !important;
+  text-decoration-thickness: 2px !important;
+  text-underline-offset: 4px !important;
+}
+
+.text-decoration-underline-dashed {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.profileIconYellow {
+  font-size: 14px;
+  color: white;
+  width: fit-content;
+  background-color: #febc3d;
+  border-radius: 999px;
+  padding: 12px;
 }
 
 .negGap {
@@ -104,6 +140,47 @@ body {
 
 .accordion-button::after {
   display: none;
+}
+
+.mobileList {
+  background: #161348;
+  list-style: none;
+  padding: 0 16px;
+  margin: 0;
+  border-radius: 8px;
+}
+
+.mobileList {
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transition: height 0.5s ease, opacity 0.5s ease;
+}
+
+.mobileList.open {
+  height: 176px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.mobileList li {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.mobileList li:last-child {
+  border-bottom: none;
+}
+
+.mobileList a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.hamburger {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 991px) {
